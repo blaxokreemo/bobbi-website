@@ -1,0 +1,48 @@
+div.container-flex.page-book {
+    align-items: center;
+}
+
+.book-description {
+    flex: 2;
+    flex-basis: 400px;
+    align-self: center;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.book-description-container {
+    background-color: var(--image-overlay-bg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+#book-description-content {
+    font-size: clamp(1rem, calc(0.5rem + 1vw), 2rem);
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.book-image {
+    /* background-color: var(--book-cover-flower-pink); */
+    padding: 10px;
+    flex: 1 30%;
+    border-radius: 10px;
+    /* float: left; */
+}
+
+.book-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+}

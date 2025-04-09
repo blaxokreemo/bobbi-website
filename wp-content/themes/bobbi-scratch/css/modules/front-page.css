@@ -1,0 +1,138 @@
+/* p {
+    font-size: min(2rem, calc(0.5rem + 2vw));
+    font-size: clamp(0.75rem, calc(0.25rem + 0.5rem), 1rem);
+    padding: 10px;
+} */
+
+h2 {
+    font-size: min(2rem, calc(0.5rem + 1.75vw));
+    color: var(--title-color);
+    background-color: var(--headline-bg);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* .bg-image:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: max(50px, calc(90vw - 1200px));
+    width: 20px;
+    height: 100vh;
+    background-color: #f7c4d5;
+} */
+
+.welcome {
+    flex: 2;
+    flex-basis: 400px;
+    align-self: center;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.welcome-container {
+    background-color: var(--image-overlay-bg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.flower-icon img {
+    width: 50px;
+}
+
+#welcome-content {
+    font-size: 3rem;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+
+
+.announcements {
+    flex: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.announcement {
+    margin: 10px 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    border-left: 5px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+}
+
+.announcement-image-container {
+    padding: 10px;
+    flex: 1 50%;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.announcement-info {
+    margin: 10px;
+}
+
+div.announcement .dipper {
+    font-size: clamp(1rem, calc(0.25rem + 1vw), 2rem);
+    padding: 10px;
+    margin: 0 4px 8px;
+}
+
+.readmore {
+    text-align: right;
+    margin: 0;
+}
+
+a.announcement-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.title-and-date {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--headline-bg);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .welcome {
+        flex-basis: 300px;
+    }
+
+    .announcements {
+        flex-basis: 200px;
+    }
+
+    .flower-icon img {
+        display: none;
+    }
+
+    #welcome-content {
+        font-size: 2rem;
+    }
+    
+}

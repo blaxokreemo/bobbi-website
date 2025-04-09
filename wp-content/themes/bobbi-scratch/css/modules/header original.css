@@ -1,0 +1,128 @@
+.site-header {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0;
+}
+
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+span.header-line {
+    content: " ";
+    border-top: 60px  solid var(--primary-color);
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    top: clamp(33px, 3vw, 70px);
+    left: 0;
+    z-index: -1;
+}
+
+.site-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    /* height: 200px; */
+}
+
+.site-nav {
+    flex-grow: 1;
+    margin: 5px 0;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* .site-nav li {
+    border: 5px solid rgb(49, 84, 49);
+    background-color: rgb(49, 84, 49);
+    border-radius: 10px;
+} */
+
+.site-nav a {
+    padding: 0 10px;
+    margin: 0;
+    color: rgb(36, 70, 36);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.site-nav a:hover {
+    color: #92c097;
+}
+
+.site-title-text {
+    color: rgb(36, 70, 36);
+    position: relative;
+    z-index: 20;
+    margin: 0;
+    /* font-size: calc(1rem + 1.5vw); */
+    /* font-size: min(4rem, calc(1rem + 2vw)); */
+    font-size: clamp(2rem, calc(1rem + 2vw), 3rem);
+    font-weight: 500;
+  }
+  
+  .site-title-text strong {
+    font-weight: 400;
+  }
+  
+  .site-title-text a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .site-title-text--alt-color a {
+    color: #666;
+  
+    &:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+
+  .headshot {
+    /* width: max(11vw, 80px); */
+    height: clamp(120px, 12vw, 200px);
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+
+
+  /* Media Queries */
+
+  @media screen and (max-width: 600px) {
+    .header-row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .site-title {
+      height: auto;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    span.header-line {
+      top: 100px;
+      border-width: 110px;
+    }
+
+    /* .headshot {
+      width: 100px;
+    } */
+    
+  }

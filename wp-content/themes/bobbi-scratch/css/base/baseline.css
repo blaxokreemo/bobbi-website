@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #cde7f4;
+    --secondary-color: #035f84;
+    --title-color: #e0046e;
+    --old-title-color: rgb(36, 70, 36);
+    --old-primary-color: #f7c4d5;
+    --old-secondary-color: #005112;
+    --hover-color: #92c097;
+    --headline-bg: rgba(255, 255, 255, 0.5);
+    --image-overlay-bg: rgba(255, 255, 255, 0.74);
+    --old-pink: #f7c4d5;
+    --lip-color: #efa9a1;
+    --book-cover-blue: #cde7f4;
+    --book-cover-flower-pink: #d96594;
+    --book-cover-author-text: #e0046e;
+    --book-cover-title-text: #035f84;
+
+}
+
+html, body {
+    /* font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: none;
+    font-weight: 300;  
+    font-family: "Barlow Condensed", sans-serif; */
+    font-family: "mr-eaves-sans", sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--book-cover-flower-pink);
+}
+
+a:hover {
+    text-decoration: none;
+}
+

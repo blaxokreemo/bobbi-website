@@ -1,0 +1,30 @@
+.announcement-post {
+    flex: 2;
+    flex-basis: 400px;
+    align-self: top;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.announcement-post-container {
+    background-color: var(--image-overlay-bg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+#announcement-post-content {
+    font-size: min(2rem, calc(0.75rem + 1vw));
+    padding: 10px 10px;
+    text-align: center;
+}
