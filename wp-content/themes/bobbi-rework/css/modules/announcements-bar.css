@@ -1,0 +1,43 @@
+/* Announcements Summary Display */
+/* Displays a summary of the latest announcements */
+
+.announcements {
+    /* Container for the announcements section */
+    flex: 1;
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement {
+    /* Individual announcement item */
+    margin: 10px 0;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    border-left: 5px solid #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+}
+
+.announcement-preview {
+    /* Contains snippet of announcement text and "Read More" link */
+    margin: 10px;
+}
+
+.readmore {
+    text-align: right;
+    margin: 0;
+}
+
+div.announcement .dipper {
+    font-size: clamp(1rem, calc(0.25rem + 1vw), 2rem);
+    padding: 10px;
+    margin: 0 4px 8px;
+}
+
+.title-and-date {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--headline-bg);
+}

@@ -1,0 +1,135 @@
+/* Main Content Containers */
+/* Everything below the header gets wrapped in one of these */
+/* There is only one on every page and they are invisible */
+
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+}
+
+.container-flex {
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container-flex {
+        flex-direction: column;
+    }    
+}
+
+/* Content Widths */
+/* These classes are used to set the width */
+
+.content-narrow {
+    max-width: 80%;
+}
+
+.content-wide {
+    max-width: 95%;
+}
+
+@media screen and (max-width: 600px) {
+    .content-narrow {
+        max-width: 90%;
+    }
+    .content-wide {
+        max-width: 90%;
+    } 
+}
+
+/* CONTENT */
+/* Building blocks of page content */
+
+.box {
+    /* Wrapper for any individual content on the page */
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* "Post" Content */
+/* Containers to display the_title() and the_content() */
+
+.post-wrapper {
+    /* Wrapper for post content */
+    flex: 2;
+    flex-basis: 400px;
+    align-self: center;
+}
+
+h2.title-box {
+    /* Displays post title */
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--headline-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+}
+
+.post-box {
+    /* Displays post content */
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--image-overlay-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+}
+
+.flower-icon {
+    /* Width of flower icons placed on either side of the post content */
+    width: 50px;
+}
+
+.post-content {
+    /* Text inside the post content box */
+    font-size: clamp(1rem, calc(0.5rem + 1vw), 2rem);
+    padding: 10px 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .post-wrapper {
+        flex-basis: 300px;
+    }
+
+    .flower-icon img {
+        display: none;
+    }    
+}
+
+
+
+
+
+
+
+.page-links {
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    left: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+

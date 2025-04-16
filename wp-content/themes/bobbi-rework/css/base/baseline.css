@@ -1,0 +1,46 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+
+:root {
+    --primary-color: #cde7f4;
+    --secondary-color: #035f84;
+    --title-color: #e0046e;
+    --hover-color: #92c097;
+    --headline-bg: rgba(255, 255, 255, 0.5);
+    --image-overlay-bg: rgba(255, 255, 255, 0.74);
+    --book-cover-blue: #cde7f4;
+    --book-cover-flower-pink: #d96594;
+    --book-cover-author-text: #e0046e;
+    --book-cover-title-text: #035f84;
+
+}
+
+/* Fonts */
+
+html, body {
+    font-family: "mr-eaves-sans", sans-serif;
+}
+
+/* General Defaults */
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--book-cover-flower-pink);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
