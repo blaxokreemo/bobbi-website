@@ -1,5 +1,6 @@
 div.container-flex.page-book {
     align-items: center;
+    justify-content: center;
 }
 
 .book-description {
@@ -45,4 +46,13 @@ div.container-flex.page-book {
     height: auto;
     border-radius: 10px;
     float: left;
+}
+
+.page-links {
+    flex: 1 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--image-overlay-bg);
+    justify-content: center;
 }
