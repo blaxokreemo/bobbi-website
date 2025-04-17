@@ -16,7 +16,7 @@
 
 .side-menu-background {
     position: fixed;
-    top: 40%;
+    top: clamp(300px, 40%, 600px);;
     left: -10px;
     
     width: 400px;
@@ -49,6 +49,16 @@
 
 .page-links h2 {
     font-size: min(2rem, calc(0.5rem + 1.25vw));
+    padding: 8px;
+}
+
+.min-list li {
+    font-size: min(1.5rem, calc(0.5rem + 1vw));
+}
+
+.current_page_item {
+    list-style: disc;
+    font-weight: bold;
 }
 
 .container-flex.room-for-menu {
