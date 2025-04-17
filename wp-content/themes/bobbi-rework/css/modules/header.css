@@ -1,0 +1,143 @@
+/* Main Wrapper */
+
+.site-header {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .site-header {
+    position: relative;
+  }
+}
+
+/* Header Images */
+
+.top-left-image {
+  border: 5px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  margin-right: 10px;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.headshot {
+  height: clamp(120px, 12vw, 200px);
+}
+
+.flower-replace {
+  height: clamp(80px, 8vw, 150px);
+}
+
+.headshot-small-screen {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* Replaces image on small screens and adds to flex header */
+  .top-left-image {
+    display: none;
+  }
+
+  .headshot-small-screen {
+    height: clamp(120px, 12vw, 200px);
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+    margin-right: 10px;
+    display: block;
+  }
+}
+
+/* Header Row */
+
+.header-row {
+  /* Flex wrapper */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+span.header-line {
+  /* Creates background color for header */
+    content: " ";
+    border-top: 60px  solid var(--primary-color);
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: -30px -10px -10px inset rgb(rgba(93, 93, 94, 0.404));
+}
+
+@media screen and (max-width: 600px) {
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  span.header-line {
+    top: 0;
+    border-width: 220px;
+  }  
+}
+
+/* Header Content */
+
+.site-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-grow: 1;
+    margin: 10px 0;
+}
+
+.site-title-text {
+  position: relative;
+  z-index: 20;
+  margin: 0 0 0 clamp(100px, 10vw, 200px);
+  font-size: clamp(2rem, calc(1rem + 2vw), 3rem);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 600px) {
+    
+  .site-title {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .site-title-text {
+    margin: 0;
+  }
+
+}
+
+.site-nav {
+    flex-grow: 1;
+    margin: 5px 0;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.site-nav a {
+    padding: 0 10px;
+    margin: 0;
+    font-size: clamp(1.5rem, calc(1rem + 1vw), 2rem);
+    font-weight: 300;
+}
+
+
