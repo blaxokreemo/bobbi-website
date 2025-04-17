@@ -1,0 +1,31 @@
+.featured-image-container {
+    padding: 10px;
+    flex: 1 30%;
+    border-radius: 10px;
+}
+
+.content-after-menu {
+    margin-left: 200px;
+
+    max-width: 95%;
+    padding: 0 16px;
+    position: relative;
+}
+
+.page-content {
+    flex: 2;
+    flex-basis: 400px;
+    align-self: center;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.generic-content {
+    font-size: clamp(1rem, calc(0.5rem + 1vw), 2rem);
+    padding: 10px 10px;
+    text-align: center;
+}

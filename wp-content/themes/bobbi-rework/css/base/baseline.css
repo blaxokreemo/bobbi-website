@@ -37,11 +37,12 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--book-cover-flower-pink);
+    color: var(--title-color);
 }
 
 a:hover {
     text-decoration: none;
+    color: var(--hover-color)
 }
 
 ul {
