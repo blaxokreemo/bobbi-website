@@ -23,8 +23,8 @@
         </div>
         <nav class="site-nav">
             <ul>
-                <li><a href="<?php echo site_url('/about') ?>">About</a></li>
-                <li><a href="<?php echo site_url('/book') ?>">Book</a></li>
+                <li <?php if (is_page('about') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"'; ?>><a href="<?php echo site_url('/about') ?>">About</a></li>
+                <li <?php if (is_page('book') or wp_get_post_parent_id(0) == 25) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/book'); ?>">Book</a></li>
                 <li><a href="https://rschnorr.substack.com/">Substack</a></li>
             </ul>
         </nav>
