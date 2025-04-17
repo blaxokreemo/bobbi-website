@@ -73,9 +73,6 @@ h2.title-box {
     background-color: var(--headline-bg);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    align-items: center;
 }
 
 .post-box {
@@ -91,7 +88,7 @@ h2.title-box {
     align-items: center;
 }
 
-.flower-icon {
+.flower-icon img {
     /* Width of flower icons placed on either side of the post content */
     width: 50px;
 }

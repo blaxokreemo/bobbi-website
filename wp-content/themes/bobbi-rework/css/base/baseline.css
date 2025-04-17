@@ -30,6 +30,15 @@ html, body {
 
 /* General Defaults */
 
+h2 {
+    font-size: min(2rem, calc(0.5rem + 1.75vw));
+    color: var(--title-color);
+    background-color: var(--headline-bg);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
 body {
     background-color: var(--secondary-color);
     color: var(--secondary-color);
