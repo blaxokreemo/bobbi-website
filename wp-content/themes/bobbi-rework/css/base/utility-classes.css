@@ -45,6 +45,12 @@
     } 
 }
 
+/* Z-Index */
+
+.on-top {
+    z-index: 2;
+}
+
 /* CONTENT */
 /* Building blocks of page content */
 
@@ -53,6 +59,7 @@
     background-color: var(--primary-color);
     border-radius: 10px;
     padding: 20px;
+    margin: 20px;
 }
 
 /* "Post" Content */
@@ -109,24 +116,5 @@ h2.title-box {
     .flower-icon img {
         display: none;
     }    
-}
-
-
-
-
-
-
-
-.page-links {
-    position: fixed;
-    z-index: 1;
-    top: 40px;
-    left: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
 }
 

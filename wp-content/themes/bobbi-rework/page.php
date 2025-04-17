@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class="container-flex content-after-menu">
+<div class="container-flex room-for-menu content-wide">
 
 <?php
           $theParent = wp_get_post_parent_id(get_the_ID());
@@ -11,24 +11,26 @@
           
           if ($theParent or $test_array) { ?>             
 
-    <div class="page-links">
-      <h2 class="page-links__title"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent); ?></a></h2>
-      <ul class="min-list">
-        <?php 
-        
-          if ($theParent) {
-              $findChildrenOf = $theParent;
-          } else {
-              $findChildrenOf = get_the_ID();
-          }
+    <div class="side-menu-background box">
+      <div class="page-links">
+        <h2 class="title-box"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent); ?></a></h2>
+        <ul class="min-list">
+          <?php 
+          
+            if ($theParent) {
+                $findChildrenOf = $theParent;
+            } else {
+                $findChildrenOf = get_the_ID();
+            }
 
-        wp_list_pages(array(
-          'title_li' => NULL,
-          'child_of' => $findChildrenOf,
-        ));
+          wp_list_pages(array(
+            'title_li' => NULL,
+            'child_of' => $findChildrenOf,
+          ));
 
-        ?>
-      </ul>
+          ?>
+        </ul>
+      </div>
     </div>
 <?php } ?>
 
@@ -40,7 +42,7 @@
 
   <?php while(have_posts()) {
       the_post(); ?>
-      <div class="box post-wrapper">
+      <div class="box post-wrapper on-top">
           <h2 class="title-box"><?php the_title() ?></h2>
           <div class="post-box">
               <div class="flower-icon"><img src="<?php echo get_theme_file_uri('images/flower.png'); ?>" alt=""></div>
