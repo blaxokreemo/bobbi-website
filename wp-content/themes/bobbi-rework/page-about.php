@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div class="content-narrow container-flex">
+<div class="content-narrow container-flex about-page">
 
     <div class="headshot-container">
         <img class="headshot-large" src="<?php echo get_theme_file_uri('images/headshot-large.jpg') ?>" alt="">
