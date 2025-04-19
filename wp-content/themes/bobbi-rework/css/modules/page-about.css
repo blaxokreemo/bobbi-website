@@ -3,6 +3,9 @@
     flex: 1 30%;
     border-radius: 10px;
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headshot-large {
@@ -10,4 +13,5 @@
     height: auto;
     border-radius: 10px;
     padding: 10px;
+    margin: 0 auto;
 }

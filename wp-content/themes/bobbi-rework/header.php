@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 <header class="site-header">
-    <?php if(is_page('25')) { ?>
+    <?php if(is_page('6')) { ?>
     <img class="top-left-image flower-replace" src="<?php echo get_theme_file_uri('images/flower.png'); ?>" alt="">
     <?php } else { ?>
     <img class="top-left-image headshot" src="<?php echo get_theme_file_uri('images/headshot.jpg'); ?>" alt="">
@@ -14,7 +14,7 @@
     <div class="container header-row">
         <span class="header-line"></span>      
         <div class="site-title">
-            <?php if(is_page('25')) { ?>
+            <?php if(is_page('6')) { ?>
             <img class="headshot-small-screen" src="<? echo get_theme_file_uri('images/flower.png'); ?>" alt=""> 
             <?php } else { ?>
             <img class="headshot-small-screen" src="<?php echo get_theme_file_uri('images/headshot.jpg'); ?>" alt="">
