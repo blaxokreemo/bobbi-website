@@ -15,7 +15,7 @@
         <span class="header-line"></span>      
         <div class="site-title">
             <?php if(is_page('25')) { ?>
-            <img class="headshot-small-screen" src="<? echo get_theme_file_uri('images/flower.png'); ?>" alt=""> 
+            <img class="headshot-small-screen" src="<?php echo get_theme_file_uri('images/flower.png'); ?>" alt=""> 
             <?php } else { ?>
             <img class="headshot-small-screen" src="<?php echo get_theme_file_uri('images/headshot.jpg'); ?>" alt="">
             <?php } ?>
