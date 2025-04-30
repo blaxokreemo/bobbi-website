@@ -28,6 +28,10 @@ html, body {
     font-family: "mr-eaves-sans", sans-serif;
 }
 
+p {
+    margin: 15px;
+}
+
 /* General Defaults */
 
 h2 {

@@ -85,7 +85,7 @@
     /* Wrapper for post content */
     flex: 2;
     flex-basis: 400px;
-    align-self: center;
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 600px) {
@@ -110,6 +110,7 @@ h2.title-box {
     padding: 20px;
     margin: 10px;
     background-color: var(--image-overlay-bg);
+
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
