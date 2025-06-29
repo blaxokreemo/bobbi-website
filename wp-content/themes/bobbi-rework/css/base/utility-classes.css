@@ -59,6 +59,13 @@
     z-index: 2;
 }
 
+/* Alignment */
+/* Classes to align content within main containers */
+
+.content-centered {
+    justify-content: center;
+}
+
 /* CONTENT */
 /* Building blocks of page content */
 
