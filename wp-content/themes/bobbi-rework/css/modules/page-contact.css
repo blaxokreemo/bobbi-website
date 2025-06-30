@@ -1,5 +1,5 @@
 .contact-form-container {
-    width: 600px;
+    width: 60vw;
     margin: 30px;
 }
 
@@ -43,4 +43,9 @@
     background-color: var(--primary-color);
     color: var(--title-color);
     border-radius: 8px;
+}
+
+.contact-invitation {
+    font-size: clamp(1rem, calc(0.5rem + 1.75vw), 3rem);
+    text-align: center;
 }

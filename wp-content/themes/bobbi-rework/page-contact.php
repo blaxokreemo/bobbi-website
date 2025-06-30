@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
 
-<div class="container-flex content-centered content-wide">
+<div class="container-flex content-centered content-narrow">
 
     <div class="box on-top">
         <h2 class="title-box"><?php the_title() ?></h2>
-        <div class="post-box">
+        <div class="post-box content-centered">
             <div class="flower-icon"><img src="<?php echo get_theme_file_uri('images/flower.png'); ?>" alt=""></div>
             <div class="contact-form-container">
+                <p class="contact-invitation">Feel free to contact me with any questions or requests.</p>
                 <form class="contact-form" method="post" action="<?php echo site_url('/thankyou') ?>">
                         <div class="form-element">
                             <label for="name">Name:</label>

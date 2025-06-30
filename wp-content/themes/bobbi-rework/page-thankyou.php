@@ -15,7 +15,7 @@
 
   <?php while(have_posts()) {
       the_post(); ?>
-      <div class="box post-wrapper on-top">
+      <div class="box on-top">
           <h2 class="title-box"><?php the_title() ?></h2>
           <div class="post-box content-centered">
               <div class="flower-icon"><img src="<?php echo get_theme_file_uri('images/flower.png'); ?>" alt=""></div>
