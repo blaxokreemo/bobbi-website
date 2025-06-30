@@ -42,4 +42,5 @@
     padding: 10px;
     background-color: var(--primary-color);
     color: var(--title-color);
+    border-radius: 8px;
 }

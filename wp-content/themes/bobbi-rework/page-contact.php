@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="form-element">
-                            <button type="submit">Send Message</button>
+                            <button type="submit" name="contact-submit">Send Message</button>
                         </div>
 
                 </form>

@@ -36,4 +36,25 @@ function bobbi_features() {
 
 add_action('after_setup_theme', 'bobbi_features');
 
+function contact_form() {
+    if(isset($_POST['contact-submit']))
+    {
+        $contact_name = sanitize_text_field($_POST['form-name']);
+        $contact_email = sanitize_text_field($_POST['form-email']);
+        $contact_message = sanitize_textarea_field($_POST['form-message']);
+
+        $to = 'bobbi@robertaschnorr.com';
+        $subject = 'Contact Form Submission from ' . $contact_name;
+        $message = 'You have received a new message from the contact form on your website.' . "\n\n";
+        $message .= 'Name: ' . $contact_name . "\n";
+        $message .= 'Email: ' . $contact_email . "\n";
+        $message .= 'Message: ' . "\n" . $contact_message . "\n";
+
+        wp_mail($to, $subject, $message);
+
+    }
+}
+
+add_action('wp_head', 'contact_form')
+
 ?>

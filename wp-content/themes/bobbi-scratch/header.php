@@ -26,6 +26,7 @@
                 <li><a href="<?php echo site_url('/about') ?>">About</a></li>
                 <li><a href="<?php echo site_url('/book') ?>">Book</a></li>
                 <li><a href="https://rschnorr.substack.com/">Substack</a></li>
+                <li><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
             </ul>
         </nav>
         </div>
