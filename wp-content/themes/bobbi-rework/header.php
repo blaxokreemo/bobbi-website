@@ -21,6 +21,11 @@
             <?php } ?>
             <h1 class="site-title-text"><a href="<?php echo site_url(); ?>">ROBERTA SCHNORR</a></h1>
         </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/robertaschnorr" target="_blank"><i class="fa-brands fa-instagram social"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61586744485744" target="_blank"><i class="fa-brands fa-facebook social"></i></a>
+            <a href="https://www.linkedin.com/in/roberta-schnorr-687599340/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
+        </div>
         <nav class="site-nav">
             <ul>
                 <li <?php if (is_page('about') or wp_get_post_parent_id(0) == 13) echo 'class="current-menu-item"'; ?>><a href="<?php echo site_url('/about') ?>">About</a></li>
